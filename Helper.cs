@@ -38,7 +38,7 @@ namespace WebSocketClient
                                                           //request.AddUrlSegment("id", "123");
                                                           // replaces matching token in request.Resource
 
-
+            client.UserAgent = "api";
             //IRestResponse response = client.Execute(request);
             var response = client.Execute<RootObject>(request);
 
